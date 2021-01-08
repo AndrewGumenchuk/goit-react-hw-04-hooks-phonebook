@@ -53,8 +53,9 @@ function App() {
         <ContactForm onSubmit={addContact} />
         <h2>Contacts</h2>
         <Filter value={filter} onChangle={changeFilter} />
+        {!contacts.length && <div>No contacts! Please add someone!</div>}
         <ContactsFile
-          contacts={visibleContacts}
+          contacts={visibleContacts()}
           onDeleteContact={deleteContact}
         />
       </div>

@@ -8,7 +8,7 @@ function ContactsFile({ contacts, onDeleteContact }) {
         <li key={id} className="item_contact">
           <p className="item_text">{name}</p>
           <p className="item_text">{number}</p>
-          <button className="item_buttom" onClick={() => onDeleteContact(id)}>
+          <button className="item__buttom" onClick={() => onDeleteContact(id)}>
             delete
         </button>
         </li>
