@@ -31,7 +31,7 @@ function ContactForm({ onSubmit }) {
     return (
       <form className="item_form" onSubmit={handleSubmit}>
         <label>
-          Ім’я
+          Name
           <input
             className="item_input"
             type="text"
